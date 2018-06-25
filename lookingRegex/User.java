@@ -63,15 +63,15 @@ public class User {
 	public void choise() throws IOException {
 		int choise;
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("Please take choise "+this.name+"!");
-		for(int h=0;h<3;h++) {
-		for(int i=0;i<Source.getSource().size();i++) {
-			System.out.println("#"+i+" "+Source.getSource().get(i).tittle);
-		}
+		System.out.println("Please take choise " + this.name + "!");
+		for (int h = 0; h < 3; h++) {
+			for (int i = 0; i < Source.getSource().size(); i++) {
+				System.out.println("#" + i + " " + Source.getSource().get(i).tittle);
+			}
 			choise = Integer.parseInt(reader.readLine());
-		likeMovie.add(Source.getSource().get(choise));
-		Source.getSource().remove(choise);
-		
+			likeMovie.add(Source.getSource().get(choise));
+			Source.getSource().remove(choise);
+
 		}
 
 	}

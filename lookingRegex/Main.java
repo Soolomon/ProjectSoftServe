@@ -11,15 +11,15 @@ public class Main {
 		boolean sex;
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Enter you name");
-		name=reader.readLine();
+		name = reader.readLine();
 		System.out.println("How old are you");
-		age=Integer.parseInt(reader.readLine());
+		age = Integer.parseInt(reader.readLine());
 		System.out.println("Choise your gender [0] Man [1] Woman");
-		sex=Boolean.parseBoolean(reader.readLine());
-		User user = new User(name,age,sex);
+		sex = Boolean.parseBoolean(reader.readLine());
+		User user = new User(name, age, sex);
 		user.choise();
 		Movie.pickUpFilms(user);
-		for(int i=0;i<Source.getSource().size();i++)
+		for (int i = 0; i < Source.getSource().size(); i++)
 			System.out.println(Source.getSource().get(i));
 	}
 }

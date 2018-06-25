@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 
 public class Movie {
 	public String tittle;
-	private  int rank = 0;
+	private int rank = 0;
 	private String fInfo;
 
 	Movie(String fInfo) {
